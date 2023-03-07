@@ -12,9 +12,7 @@ exports.usersList = async (req, res) => {
 
 exports.creatUser = async (req, res) => {
     console.log('Controller :: Create users function');
-    // const postData = req.body;
-    // console.log('Creat-User Data In Controller', req);
-    // res.send(postData);
+   
     try {
         const postData = await User.creat(req.body);
         console.log('Post Data', postData);
